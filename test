@@ -1,0 +1,5 @@
+#!/usr/bin/env nix-shell
+#!nix-shell shell.nix -i bash
+
+echo '{"name":"psc-package","set":"local","source":"packages.json","depends":[]}' > psc-package.json
+psc-package verify
